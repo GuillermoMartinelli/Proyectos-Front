@@ -60,7 +60,7 @@ h1,a{
 
 }
 .card-left{
-    background-image: url("../img/delivery.svg");
+    background-image: url(../img/delivery.svg);
     width: 49%;
     height: 350px;
     background-repeat: no-repeat;
