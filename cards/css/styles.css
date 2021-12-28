@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto",sans-serif;
+}
+
+.descuento {
+    background-color: #1CD1B0;
+    padding: 10px 10px ;
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+    
+}
+
+/******header******/
+h1 {
+    background-color: #00669F;
+    padding: 28px 28px 26px ;
+    box-shadow: rgb(0, 0, 0, 0.25) 0px 10px 7px;
+    font-weight: 400;
+}
+
+/*******main******/
+.conteiner {
+    width: 960px;
+    height: 530px;
+    margin-top: 292px;
+    margin-left: 200px;
+    margin-bottom: 202px;
+    position: relative;
+    
+}
+
+.boton {
+    Width: 128.78px;
+    Height: 48.52px;
+    background-color: #00669F;
+    position: absolute;
+    left: 81px;
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+p{
+    font-weight: 400;
+}
+
+.ver-mas {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    color: white;
+}
+
+
+
+.texto-card{
+    padding-left: 16px;
+    padding-right: 17px;
+}
+
+/***batman card***/
+.card-batman {
+    top: 0;
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    background-color: #F3F3F3;
+    box-shadow: rgb(0, 0, 0, 0.25) 0px 10px 7px;
+}
+.cara-batman {
+    background-image: url("../img/cara\ batman.svg");
+    Width: 120px;
+    Height: 118px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+}
+
+.card-img-batman {
+    background-image: url("../img/849bfede3a5193c34ab8a00379e64fa2\ 1.svg");
+    width: 300px;
+    height: 193px;
+}
+
+.card-text-batman {
+    margin-top: 90px;
+}
+
+/****harly card****/
+.card-harly {
+    top: 0;
+    left: 325px;
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    background-color: #F3F3F3;
+    box-shadow: rgb(0, 0, 0, 0.25) 0px 10px 7px;
+}
+
+.card-img-harly {
+    background-image: url("../img/fondoHarly.svg");
+    width: 300px;
+    height: 193px;
+}
+.cara-harly {
+    background-image: url("../img/cara\ harly.svg");
+    Width: 120px;
+    Height: 118px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+}
+
+.card-text-harly {
+    margin-top: 90px;
+}
+.boton-harly{
+    Width: 128.78px;
+    Height: 48.52px;
+    background-color: #00669F;
+    position: absolute;
+    left: 81px;
+    margin-top: 30px;
+}
+
+/*******bartam2 card*****/
+.card-batman2 {
+    top: 0;
+    left: 650px;
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    background-color: #F3F3F3;
+    box-shadow: rgb(0, 0, 0, 0.25) 0px 10px 7px;
+}
+
+.card-img-batman2 {
+    background-image: url("../img/849bfede3a5193c34ab8a00379e64fa2\ 1.svg");
+    width: 300px;
+    height: 193px;
+}
+
+.card-text-batman2 {
+    margin-top: 90px;
+}
+
+/*******footer*****/
+footer {
+    background-color: #00669F;
+    color: white;
+    padding: 16px 16px;
+}

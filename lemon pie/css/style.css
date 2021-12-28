@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
+/*-------------  body -----------*/
+body{
+    font-family: 'Inter', sans-serif;
+}
+/****header********/
+
+
+/******main*****/
+
+.banner{
+    background-color: #f3c497ec;
+    background-image: url("../img/lemon-pie\ 1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+h1{
+    padding-top: 400px;
+}
+.bannerP{
+    font-weight: 900;
+}
+.canasta{
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+/**********footer************/
+
+footer p{
+    text-align: center;
+}
