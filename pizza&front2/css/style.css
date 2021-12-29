@@ -34,6 +34,9 @@ header ul{
     display: flex;
     list-style: none;
 }
+.icono-menu{
+    display: none;
+}
 a{
     margin-left: 10px;
     text-decoration: none;
@@ -61,6 +64,7 @@ h1,a{
 }
 .card-left{
     background-image: url(../img/delivery.svg);
+    background-color:#ebb93c;
     width: 49%;
     height: 350px;
     background-repeat: no-repeat;
@@ -108,4 +112,27 @@ footer{
 footer li{
     margin: 10% 1% 1% -2%;
     list-style: none;
+}
+@media screen and (max-width:768px ){
+    .conteiner{
+        flex-direction: column;
+    }
+    .card-left{
+        width: 100%;
+        background-color:#ebb93c;
+        background-size: cover;
+    }
+    .card-right{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    nav ul{
+        display: none;
+    }
+    .icono-menu{
+        display: block;
+        color :white;
+        padding-right: 8%;
+    }
 }
