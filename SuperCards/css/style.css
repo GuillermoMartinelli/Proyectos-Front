@@ -62,7 +62,8 @@ h1 {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-.corazon{
+
+.corazon {
     width: 30px;
     margin: 15px;
 }
@@ -118,7 +119,7 @@ h1 {
     background-image: url("../img/bg-harley-quinn.svg");
 }
 
-.boton-flotante{
+.boton-flotante {
     position: fixed;
     border-radius: 50%;
     background-color: var(--color-secundario);
@@ -154,67 +155,80 @@ footer {
     color: var(--color-terciario);
     text-decoration: none;
 }
-@media screen and (min-width:600px){
-    .conteiner{
+
+@media screen and (min-width:600px) {
+    .conteiner {
         flex-direction: row;
         max-width: 1024px;
         flex-wrap: wrap;
         align-items: stretch;
     }
-    .cards{
+
+    .cards {
         max-width: 40%;
     }
-    .pie{
+
+    .pie {
         position: relative;
     }
-    .git{
+
+    .git {
         position: absolute;
         right: 20px;
         bottom: -8px;
         font-size: 2rem;
         font-weight: 700;
     }
+}
+    @media screen and (min-width:770px) {
+        body {
+            max-width: 1980px;
+        }
 
-@media screen and (min-width:770px) {
-    body{
-    max-width: 1980px;
-    }
-    .conteiner{
-        flex-wrap: nowrap;
-        align-content: center;
-        margin: 0 auto;
-    }
-    .cards{
-        max-width: 25%;
-        margin: 1%;
-        justify-content: space-between;
-        align-items:center ;
-    }
-    
-    .bg-card{
-        display: flex;
-        flex-direction: column;
-        padding-top: 15%;
-    }
-    .bg-super-man{
-        padding-top: 6%;
-    }
-    .h2-cards{
-        margin-top: 20%;
-    }
-    .super-p{
-        height: 100%;
-    }
-    .h2-super-man{
-        margin-bottom: 12%;
-    }
-    .h2-harly{
-        margin-bottom: 20%;
-    }
-    .h2-mujer-maravilla{
-        margin-bottom: 13%;
-    }
-    .p-super-man{
-        padding-bottom: 20%;
-    }
-}   
+        .conteiner {
+            flex-wrap: nowrap;
+            align-content: center;
+            margin: 0 auto;
+        }
+
+        .cards {
+            max-width: 25%;
+            margin: 1%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bg-card {
+            display: flex;
+            flex-direction: column;
+            padding-top: 15%;
+        }
+
+        .bg-super-man {
+            padding-top: 6%;
+        }
+
+        .h2-cards {
+            margin-top: 20%;
+        }
+
+        .super-p {
+            height: 100%;
+        }
+
+        .h2-super-man {
+            margin-bottom: 12%;
+        }
+
+        .h2-harly {
+            margin-bottom: 20%;
+        }
+
+        .h2-mujer-maravilla {
+            margin-bottom: 13%;
+        }
+
+        .p-super-man {
+            padding-bottom: 20%;
+        }
+}
