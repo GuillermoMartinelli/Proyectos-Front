@@ -174,8 +174,11 @@ footer {
         font-size: 2rem;
         font-weight: 700;
     }
-}
+
 @media screen and (min-width:770px) {
+    body{
+    max-width: 1980px;
+    }
     .conteiner{
         flex-wrap: nowrap;
         align-content: center;
@@ -187,14 +190,31 @@ footer {
         justify-content: space-between;
         align-items:center ;
     }
+    
     .bg-card{
         display: flex;
         flex-direction: column;
+        padding-top: 15%;
+    }
+    .bg-super-man{
+        padding-top: 6%;
     }
     .h2-cards{
         margin-top: 20%;
     }
     .super-p{
         height: 100%;
+    }
+    .h2-super-man{
+        margin-bottom: 12%;
+    }
+    .h2-harly{
+        margin-bottom: 20%;
+    }
+    .h2-mujer-maravilla{
+        margin-bottom: 13%;
+    }
+    .p-super-man{
+        padding-bottom: 20%;
     }
 }   
