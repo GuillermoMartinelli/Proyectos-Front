@@ -24,12 +24,15 @@ body {
     position: sticky;
     top: 0%;
     z-index: 999;
+    padding-left: 3%;
 }
 
 /*****header****/
 h1 {
     background-color: var(--color-secundario);
     color: var(--color-terciario);
+    font-weight: 300;
+    padding-left: 3%;
 }
 
 /****main****/
@@ -59,6 +62,10 @@ h1 {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
+.corazon{
+    width: 30px;
+    margin: 15px;
+}
 
 .h2-cards {
     margin-top: 20%;
@@ -76,8 +83,6 @@ h1 {
     display: flex;
     color: var(--color-terciario);
     text-decoration: none;
-
-
 }
 
 .ver-mas {
@@ -113,6 +118,20 @@ h1 {
     background-image: url("../img/bg-harley-quinn.svg");
 }
 
+.boton-flotante{
+    position: fixed;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+    bottom: 50%;
+    right: 10px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--color-terciario);
+    font-weight: 300;
+}
+
 /*******footer******/
 
 footer {
@@ -135,3 +154,47 @@ footer {
     color: var(--color-terciario);
     text-decoration: none;
 }
+@media screen and (min-width:600px){
+    .conteiner{
+        flex-direction: row;
+        max-width: 1024px;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .cards{
+        max-width: 40%;
+    }
+    .pie{
+        position: relative;
+    }
+    .git{
+        position: absolute;
+        right: 20px;
+        bottom: -8px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width:770px) {
+    .conteiner{
+        flex-wrap: nowrap;
+        align-content: center;
+        margin: 0 auto;
+    }
+    .cards{
+        max-width: 25%;
+        margin: 1%;
+        justify-content: space-between;
+        align-items:center ;
+    }
+    .bg-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .h2-cards{
+        margin-top: 20%;
+    }
+    .super-p{
+        height: 100%;
+    }
+}   
