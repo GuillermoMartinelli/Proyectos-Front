@@ -217,18 +217,23 @@ footer {
         }
 
         .h2-super-man {
-            margin-bottom: 12%;
+            margin-bottom: 1%;
         }
 
         .h2-harly {
-            margin-bottom: 20%;
+            margin-bottom: 1%;
         }
 
         .h2-mujer-maravilla {
-            margin-bottom: 13%;
+            margin-bottom: 1%;
         }
-
+        .p-mujer-maravilla{
+            padding-bottom: 12%;
+        }
         .p-super-man {
-            padding-bottom: 20%;
+            padding-bottom: 27%;
+        }
+        .p-harly{
+            padding-bottom: 22%;
         }
 }
