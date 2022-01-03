@@ -68,12 +68,7 @@ h1 {
     width: 30px;
     margin: 15px;
 }
-.corazon-super-man{
-    margin: 5px;
-}
-.corazon-harly{
-    margin: 20px;
-}
+
 
 .h2-cards {
     margin-top: 20%;
@@ -210,14 +205,7 @@ footer {
             display: flex;
             flex-direction: column;
             padding-top: 15%;
+            height: 400px;
         }
 
-        .bg-super-man {
-            padding-top: 6%;
-        }
-
-        .corazon-super-man{
-            margin-top: 8px;
-            margin-left: 18px;
-        }
-}
+    }
