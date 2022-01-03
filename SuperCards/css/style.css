@@ -182,7 +182,7 @@ footer {
         font-weight: 700;
     }
 }
-    @media screen and (min-width:770px) {
+    @media screen and (min-width:811px) {
         body {
             max-width: 1980px;
         }
