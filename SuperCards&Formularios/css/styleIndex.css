@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
+
+:root {
+    --color-principal: #00669F;
+    --color-secundario: #1CD1B0;
+    --color-terciario: #001D2D;
+    --color-bg-card: #F3F3F3;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/********************body*****************/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*************header**************/
+nav>ul {
+    background-color: var(--color-terciario);
+    display: flex;
+    padding: 1% 1%;
+    justify-content: flex-end
+}
+
+nav>ul>li {
+    margin: 0% 1% 0%;
+    list-style: none;
+    ;
+}
+
+.liNav {
+    color: white;
+    text-decoration: none;
+}
+
+/***************main****************/
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-card);
+    border-radius: 25px;
+    width: 95%;
+    margin: 3% 0%;
+}
+
+.bg-card {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+}
+
+.corazon {
+    height: 15%;
+    position: absolute;
+    left: 3%;
+    top: 4%;
+}
+
+.cara {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(50% - 50px);
+    bottom: calc(-2% - 50px);
+}
+
+.card-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0%;
+}
+
+.card-descripcion {
+    padding: 20% 1% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.super-p {
+    margin: 5% 5% 0%;
+}
+
+.boton {
+    background-color: var(--color-principal);
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.bg-batman {
+    background-image: url("../img/baticueva.svg");
+}
+
+.bg-harley {
+    background-image: url("../img/bg-harley-quinn.svg");
+}
+
+.bg-super-man {
+    background-image: url("../img/bg-super-man.svg");
+}
+
+@media screen and (min-width:600px) {
+    .conteiner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cards {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:811px) {
+    .conteiner {
+        flex-wrap: nowrap;
+
+    }
+
+    .cards {
+        width: 30%;
+        height: 600px;
+        max-width: 524px;
+    }
+
+    .card-descripcion {
+        display: flex;
+        height: 300px;
+    }
+}
