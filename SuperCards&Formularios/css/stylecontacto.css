@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+:root {
+    --color-principal: #00669F;
+    --color-secundario: #1CD1B0;
+    --color-terciario: #001D2D;
+    --color-bg-card: #F3F3F3;
+    --color-boton-reset:#888888;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/*************main*********/
+.conteiner-contacto{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    width: 300px;
+    padding: 18% 0%;
+    font-family:"inter",sans-serif ;
+    font-weight: 400;
+}
+h2{
+    font-family: "inter",sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+fieldset{
+    border:none;
+}
+fieldset>form{
+    display: flex;
+    flex-direction: column;
+}
+form>input{
+    margin-top: 3%;
+    height: 30px;
+}
+form>textarea{
+    margin-top: 3%;
+    resize: none;
+}
+form>div{
+    margin-top: 5%;
+}
+.botones-form{
+    border-radius: 20px;
+    width: 49%;
+    border: none;
+    height: 25px;
+    font-weight: 700;
+}
+.boton-reset{
+    background-color: var(--color-boton-reset);
+    color: white;
+}
+.boton-enviar{
+    background-color: var(--color-secundario);
+}
+@media screen and (min-width:600px){
+    .conteiner-contacto{
+        padding: 8.5% 0%;
+    }
+}
+@media screen and (min-width:811) {
+    .conteiner-contacto{
+        width: 400px;
+        height: 610px;
+    }
+}
