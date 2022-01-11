@@ -13,6 +13,10 @@
 /********************body**************/
 body{
     font-family:'Roboto',sans-serif ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1980px;
 }
 .sticky{
     background-color: var(--color-secundario);
@@ -38,6 +42,9 @@ h1{
 }
 /**********main***********/
 /********footer**********/
+footer{
+    margin-top: auto;
+}
 footer>p{
     background-color: var(--color-principal);
     text-align: center;

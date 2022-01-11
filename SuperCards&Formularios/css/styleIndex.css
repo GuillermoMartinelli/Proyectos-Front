@@ -149,7 +149,6 @@ nav>ul>li {
     .conteiner {
         flex-wrap: nowrap;
         padding: 0%;
-        width: 1200px;
         margin: 0 auto;
         justify-content: space-between;
     }
