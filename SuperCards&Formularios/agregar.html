@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,75 @@
     <link rel="stylesheet" href="css/styleGeneral.css">
     <title>Super cards</title>
 </head>
+
 <body>
-    <div class="sticky"><p>20% de descuento en todos los productos!</p></div>
+    <div class="sticky">
+        <p>20% de descuento en todos los productos!</p>
+    </div>
     <header>
         <div class="tienda">
             <img src="img/tienda-pc.svg" alt="tienda">
             <h1>Nombre Tienda</h1>
         </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a class="liNav" href="contacto.html" target="_blanck">Contacto</a></li>
+                    <li><a class="liNav" href="registro.html" target="_blanck">Registrarme</a></li>
+                    <li><a class="liNav" href="login.html" target="_blanck">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="conteiner-agregar">
+        <form>
             <h2>Añadí tu super!</h2>
-            <p>Agregá tu personaje favorito completando las opciones.</p>
-        </section>
+            <p class="parrafo-form">Agregá tu personaje favorito completando las opciones.</p>
+            <div class="conteiner-agregar">
+                <div class="conteiner-izquierdo">
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" name="nombre" placeholder="  Super nombre">
+                    <label for="fecha">*Fecha</label>
+                    <input type="date" name="fecha">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="  Descripción"></textarea>
+                </div>
+                <div class="conteiner-derecho">
+                    <label for="especie">*Especie</label>
+                    <select name="especie" id="especies" required>
+                        <option value="">especie</option>
+                        <option value="Humano">Humano</option>
+                        <option value="Marciano">Marciano</option>
+                        <option value="Cryptionano">Cryptionano</option>
+                        <option value="Humanoide">Humanoide</option>
+                        <option value="Psions">Psions</option>
+                        <option value="Coluans">Coluans</option>
+                        <option value="The Reach">The Reach</option>
+                        <option value="Parademons">Parademons</option>
+                        <option value="Tamareanos">Tamareanos</option>
+                        <option value="Oans">Oans</option>
+                        <option value="Thanagarianos">Thanagarianos</option>
+                        <option value="New Gods">New Gods</option>
+                        <option value="No identificado">No identificado</option>
+                    </select>
+                    <label for="foto" class="elegir-archivo">*Agregar Foto</label>
+                    <input type="file" name="foto" accept=".jpg" multiple class="elegir-archivo">
+                    <label for="poderes">Poderes</label>
+                    <label for="poderes"><input type="checkbox" name="poderes" value="Volar"> Volar</label>
+                    <label for="poderes"><input type="checkbox" name="poderes" value="Superinteligencia"> Superinteligencia</label>
+                    <label for="poderes"><input type="checkbox" name="poderes" value="Vista de rayo lazer"> Vista de tayo lazer</label>
+                    <label for="poderes"><input type="checkbox" name="poderes" value="billetera"> Billetera Gorda</label>
+                    <hr>
+                    <label for="tipo-personaje">Tipo de personaje</label>
+                    <label for="tipo-personaje"><input type="radio" name="tipo-personaje" value="heroe"> Héroe / Heroina</label>
+                    <label for="tipo-personaje"><input type="radio" name="tipo-personaje" value="villano"> Villano / Villana</label>
+                </div>
+            </div>
+            <div><input type="submit" value="Añadir" class="boton-añadir"></div>
+        </form>
     </main>
     <footer>
         <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
 </body>
+
 </html>
