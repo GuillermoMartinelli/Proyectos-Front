@@ -34,9 +34,14 @@ nav>ul>li {
 main{
     padding:6% 0;
     width: auto;
+    font-family: 'Karla', sans-serif;
+}
+h2, .parrafo-form{
+    font-family: 'Inter', sans-serif;
 }
 .parrafo-form{
     text-align: center;
+
 }
 form{
     display: flex;
@@ -60,6 +65,7 @@ form{
     display: flex;
     flex-direction: column;
 }
+
 .conteiner-izquierdo, .conteiner-derecho{
     display: flex;
     flex-direction: column;
@@ -77,7 +83,7 @@ textarea{
     width: 100%;
     border-radius: 25px;
 }
-.elegir-archivo{
+.elegir-archivo-input{
     border-radius: 5px;
     color: black;
 }
@@ -88,31 +94,39 @@ input[type="submit"]{
     background-color: var(--color-secundario);
     color: black;
     margin-bottom: 5%;
+    font-size: 2rem ;
+    font-family: "inter"sans-serif;
+    font-weight: 700;
 }
 input:hover{
     background-color: #001D2D;
     color: white;
     cursor: pointer;
 }
-input[type="checkbox"]{
+input[type="checkbox"], input[type="radio"]{
     display: none;
 }
-input[type="checkbox"]+label{
+input[type="checkbox"]+label ,input[type="radio"]+label{
     position: relative;
     padding-left: 21px;
 }
 
-input[type="checkbox"]+label::before{
+input[type="checkbox"]+label::before,input[type="radio"]+label::before {
     content: "";
     width: 12px;
     height: 10px;
     border:2px solid #C4C4C4;
-    border-radius: 5px;
     display: inline-block;
     background-color: white;
     position: absolute;
     left: 0;
     top: 2px;
+}
+input[type="checkbox"]+label::before{
+    border-radius: 5px;
+}
+input[type="radio"]+label::before{
+    border-radius: 50%;
 }
 input[type="checkbox"]:checked + label::before{
     content: "\f00c";
@@ -120,4 +134,36 @@ input[type="checkbox"]:checked + label::before{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 12px;
+}
+input[type="radio"]:checked + label::before{
+    background-color: #34CEFF;
+}
+@media screen and (min-width:600px) {
+    h2{
+        font-size: 2rem;
+    }
+    form{
+        width: 70vw;
+    }
+    .conteiner-agregar{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .conteiner-derecho,.conteiner-izquierdo{
+        width: 45%;
+        height: 400px;
+        justify-content: space-around;
+        
+    }
+    input[type="submit"]{
+        width: 400px;
+        height: 87px;
+    }
+    input,select{
+        height: 30px;
+    }
+    label,input,select{
+        border-radius: 10px;
+        margin: 0;
+    }
 }
