@@ -133,6 +133,9 @@ nav>ul>li {
     color: white;
     font-weight: 300;
 }
+.boton-flotante:hover{
+    background-color: #001D2D;
+}
 @media screen and (min-width:600px) {
     .conteiner {
         flex-direction: row;

@@ -48,9 +48,17 @@ form{
     border-radius: 25px;
     color: white;
 }
+.conteiner{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .conteiner-agregar{
     margin: 5% 0% 4%;
-    width: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .conteiner-izquierdo, .conteiner-derecho{
     display: flex;
@@ -73,10 +81,43 @@ textarea{
     border-radius: 5px;
     color: black;
 }
-.boton-añadir{
+input[type="submit"]{
     width: 200px;
     height: 50px;
     border-radius: 15px;
     background-color: var(--color-secundario);
     color: black;
+    margin-bottom: 5%;
+}
+input:hover{
+    background-color: #001D2D;
+    color: white;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]+label{
+    position: relative;
+    padding-left: 21px;
+}
+
+input[type="checkbox"]+label::before{
+    content: "";
+    width: 12px;
+    height: 10px;
+    border:2px solid #C4C4C4;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+input[type="checkbox"]:checked + label::before{
+    content: "\f00c";
+    background-color: #34CEFF;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
 }
