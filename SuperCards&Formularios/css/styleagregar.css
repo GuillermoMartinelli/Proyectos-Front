@@ -98,7 +98,7 @@ input[type="submit"]{
     font-family: "inter"sans-serif;
     font-weight: 700;
 }
-input:hover{
+input[type="submit"]:hover{
     background-color: #001D2D;
     color: white;
     cursor: pointer;
@@ -164,6 +164,6 @@ input[type="radio"]:checked + label::before{
     }
     label,input,select{
         border-radius: 10px;
-        margin: 0;
+        margin:0 ;
     }
 }
