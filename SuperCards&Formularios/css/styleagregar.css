@@ -69,7 +69,7 @@ form{
 .conteiner-izquierdo, .conteiner-derecho{
     display: flex;
     flex-direction: column;
-    margin: 2% 0 2%;
+    margin: 15px 0 15px;
 }
 select{
     border-radius: 25px;
@@ -81,7 +81,13 @@ label,input{
 textarea{
     resize: none;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
+    padding: 1px ;
+}
+input:focus, textarea:focus,select:focus {
+    outline-style:solid;
+    outline-width: 2px;
+    outline-color: var(--color-secundario);
 }
 .elegir-archivo-input{
     border-radius: 5px;
@@ -97,6 +103,7 @@ input[type="submit"]{
     font-size: 2rem ;
     font-family: "inter"sans-serif;
     font-weight: 700;
+    outline: none;
 }
 input[type="submit"]:hover{
     background-color: #001D2D;
@@ -138,12 +145,16 @@ input[type="checkbox"]:checked + label::before{
 input[type="radio"]:checked + label::before{
     background-color: #34CEFF;
 }
+input[type="file"]{
+    outline: none;
+}
+
 @media screen and (min-width:600px) {
     h2{
         font-size: 2rem;
     }
     form{
-        width: 70vw;
+        width: 60vw;
     }
     .conteiner-agregar{
         flex-direction: row;
@@ -153,17 +164,25 @@ input[type="radio"]:checked + label::before{
         width: 45%;
         height: 400px;
         justify-content: space-around;
-        
-    }
-    input[type="submit"]{
-        width: 400px;
-        height: 87px;
     }
     input,select{
-        height: 30px;
+        height: 36px;
+    }
+    input[type="submit"]{
+        width: 343px;
+        height: 87px;
     }
     label,input,select{
         border-radius: 10px;
         margin:0 ;
+        padding: 0;
+    }
+    select{
+        margin-top: 0px;
+    }
+    @-moz-document url-prefix() {
+        .conteiner-derecho{
+            margin: 9px 0 0;
+        }
     }
 }
