@@ -166,7 +166,7 @@ input[type="file"]{
         justify-content: space-around;
     }
     input,select{
-        height: 36px;
+        height: 55px;
     }
     input[type="submit"]{
         width: 343px;
