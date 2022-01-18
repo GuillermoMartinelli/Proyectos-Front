@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
 :root {
     --color-principal: #00669F;
     --color-secundario: #1CD1B0;
@@ -34,6 +35,21 @@ nav>ul>li {
 .liNav {
     color: white;
     text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    background: var(--color-principal);
+    position: absolute;
+    bottom: -10px;
+    height: 0px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before {
+    height: 20%;
 }
 
 /***************main****************/
@@ -53,6 +69,10 @@ nav>ul>li {
     margin: 3% 0%;
 }
 
+.cards:hover .corazon {
+    animation: late 1s infinite alternate;
+}
+
 .bg-card {
     height: 200px;
     width: 100%;
@@ -63,11 +83,13 @@ nav>ul>li {
 }
 
 .corazon {
-    height: 15%;
+    height: 25px;
     position: absolute;
     left: 3%;
     top: 4%;
+
 }
+
 
 .cara {
     width: 100px;
@@ -108,6 +130,10 @@ nav>ul>li {
     color: white;
 }
 
+.boton:hover {
+    background-color: var(--color-terciario);
+}
+
 .bg-batman {
     background-image: url("../img/baticueva.svg");
 }
@@ -133,9 +159,22 @@ nav>ul>li {
     color: white;
     font-weight: 300;
 }
-.boton-flotante:hover{
+
+.boton-flotante:hover {
     background-color: #001D2D;
 }
+
+
+@keyframes late {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*******media query********/
 @media screen and (min-width:600px) {
     .conteiner {
         flex-direction: row;

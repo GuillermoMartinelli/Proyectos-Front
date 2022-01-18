@@ -29,6 +29,20 @@ nav>ul>li {
 .liNav {
     color: white;
     text-decoration: none;
+    position: relative;
+}
+
+nav ul li a:before {
+    content: '';
+    background: var(--color-principal);
+    position: absolute;
+    bottom: -10px;
+    height: 0px;
+    width: 100%;
+    transition: all 0.3s;
+}
+nav ul li a:hover::before {
+    height: 20%;
 }
 /**********main*******/
 main{
