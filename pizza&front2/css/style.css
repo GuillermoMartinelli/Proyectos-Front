@@ -53,6 +53,24 @@ h1,a{
 .pizza-header{
     margin-right: 2%;
 }
+nav ul li a:hover{
+    color:#e8af24;
+}
+ul li a:hover::before {
+    content: "\f818";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+ul li a:hover::after {
+    content: "\f818";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+}
+.bar{
+    display: none;
+}
 /******main******/
 .conteiner{
     display: flex;
@@ -95,8 +113,8 @@ main h2{
 ol>li{
     font-weight: 700;
     margin-top: 6%;
-
 }
+
 /******footer******/
 footer{
     background-color: var(--color-principal);
@@ -128,11 +146,41 @@ footer li{
 }
 @media screen and (max-width:600px) {
     nav ul{
-        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 88px;
+        right: 10px;
+        background-color: var(--color-principal);
+        width: 0px;
+    }
+    nav ul li{
+        padding: 5px 10px 5px;
     }
     .icono-menu{
         display: block;
         color :white;
         padding-right: 8%;
+    }
+    input[type="checkbox"]{
+        display:none ;
+    }
+    .bar{
+        display: block;
+        padding-right: 25px;
+    }
+    input[type="checkbox"]:checked ~ .nav-menu{
+        width: 120px;
+    }
+    .pizza-header{
+        margin-right: 2%;
+    }
+    nav ul li a:hover{
+        color:#e8af24;
+    }
+    ul li a:hover::before {
+        content: "";
+    }
+    ul li a:hover::after {
+        content: "\f818";
     }
 }

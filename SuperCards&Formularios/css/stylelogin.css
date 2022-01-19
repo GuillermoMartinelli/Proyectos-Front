@@ -45,6 +45,7 @@ input{
     border-radius: 23px;
     border:none;
     font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .p-registrar{
     text-align: center;
@@ -52,6 +53,13 @@ input{
 .text-registro{
     text-decoration: none;
     color: var(--color-principal);
+}
+input[type="submit"]:hover{
+    background-color: var(--color-terciario);
+    color: white;
+}
+.text-registro:hover{
+    text-decoration: underline;
 }
 @media screen and (min-width:600px) {
     .conteiner-login{

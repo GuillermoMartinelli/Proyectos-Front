@@ -23,7 +23,8 @@ nav>ul {
     background-color: var(--color-terciario);
     display: flex;
     padding: 1% 1%;
-    justify-content: flex-end
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav>ul>li {
@@ -67,6 +68,7 @@ nav ul li a:hover::before {
     border-radius: 25px;
     width: 95%;
     margin: 3% 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cards:hover .corazon {
@@ -128,6 +130,7 @@ nav ul li a:hover::before {
     padding: 3%;
     text-decoration: none;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .boton:hover {

@@ -60,6 +60,7 @@ select{
     border: none;
     height: 25px;
     font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .boton-reset{
     background-color: var(--color-boton-reset);
@@ -68,6 +69,16 @@ select{
 .boton-registro{
     color: black;
     background-color: var(--color-secundario);
+}
+.boton-reset:hover{
+    background-color: var(--color-terciario);
+}
+.boton-registro:hover{
+    background-color: var(--color-terciario);
+    color: white;
+}
+.text-ingresar:hover{
+    text-decoration: underline;
 }
 @media screen and (min-width:600px) {
     .conteiner-registro{
