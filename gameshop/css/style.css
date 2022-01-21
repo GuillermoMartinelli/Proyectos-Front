@@ -41,6 +41,44 @@ h1{
     color: var(--color-segundo);
     font-weight: 400;
 }
+
+nav ul{
+    flex-direction: column;
+    position: fixed;
+    top: 88px;
+    right: 0px;
+    background-color: var(--color-principal);
+    width: 0px;
+}
+nav ul li{
+    padding: 5px 12px 5px;
+    list-style: none;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+.icono-menu{
+    display: block;
+    color :white;
+    padding-right: 8%;
+}
+input[type="checkbox"]{
+    display:none ;
+}
+.bar{
+    display: block;
+    padding-right: 25px;
+}
+input[type="checkbox"]:checked ~ .nav-menu{
+    width: 120px;
+}
+.nav-menu{
+    background-color: var(--color-primer);
+}
+.fa-shopping-cart{
+    color: var(--color-segundo);
+}
 /*********main********/
 /**hero**/
 .hero{
@@ -79,10 +117,17 @@ main section  a p{
     font-size: 25px;
 }
 /**cards**/
-.productos-destacados{
+.conteiner{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center
+}
+.productos-destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .cards{
     width:70% ;
@@ -119,12 +164,15 @@ hr{
     flex-direction: column;
     align-items: center;
     padding: 10% 0;
+    
 }
 .estrellas{
     height: 108px;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     margin: 3% 0 6% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .sillas{
     background-image: url(../img/sillas.svg);
@@ -132,4 +180,105 @@ hr{
 .computadoras{
     background-image: url(../img/compus.svg);
 }
+
 /********footer*******/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primer);
+}
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+    padding: 7% 0%;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes{
+    color: white;
+    font-size: 25px;
+    padding: 7% 0%;
+}
+
+.iconos-sociales{
+    display: flex;
+    padding: 7% 0%;
+}
+.fa-twitter{
+    height: 26px;
+    width: 32px;
+    color: #14AED0;
+}
+.fa-facebook-f{
+    height: 16px;
+    width: 32px;
+    color: #1476D0;
+}
+.fa-instagram{
+    height: 28px;
+    width: 28px;
+    color: #CE0CFF;
+}
+.footer-bottom{
+    background-color: var(--color-tercero);
+    width: 100%;
+}
+.footer-bottom p{
+    text-align: center;
+}
+.p-silla,.p-compu {
+    font-size: 15px;
+    margin-left: 120px;
+}
+@media screen and (min-width:600px){
+    nav ul{
+        position: absolute;
+        width: 300px;
+        top: 40px;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .bar{
+        display: none;
+    }
+    nav ul li{
+        padding: 0px 5px 0px;
+        list-style: none;
+    }
+    /****main****/
+    .productos-destacados{
+        flex-direction: column;
+    }
+    .conteiner{
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+    }
+    .conteiner-estrellas{
+        display: flex;
+        width: 80%;
+        justify-content: space-around
+    }
+    .estrellas{
+        width: 40%;
+    }
+    /***footer***/
+    .footer-top{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+}
