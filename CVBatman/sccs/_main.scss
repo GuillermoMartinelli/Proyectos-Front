@@ -1,0 +1,31 @@
+main{
+    padding-top: 80px;
+    h2{
+        background-color: $color-bg-h2;
+        color: $color-h2;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 17,00px;
+        letter-spacing: 4px;
+        margin: 1% 1%;
+        span{
+            margin-left: 30px;
+        }
+    }
+    span{
+        
+        font-weight: bold;
+        font-style: italic;
+    }
+    ul{
+    margin-left: 55px;
+    }
+    dl{
+        margin-left: 38px;
+        dd{
+            margin-left: 80px;
+        }
+    }
+}
