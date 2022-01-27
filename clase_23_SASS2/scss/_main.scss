@@ -1,0 +1,79 @@
+/******main******/
+main{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3%;
+    .conteiner-top{
+        display: flex;
+        width: 96%;
+        .cabeza{
+            display: flex;
+            justify-content: space-evenly;
+            .cards-top{
+                width: 50%;
+                height: 400px;
+                position: relative;
+                h2{
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 55px;
+                    line-height: 70px;
+                    letter-spacing: 10px;
+                    span{
+                        background-image:  linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+                    }
+                    
+                }
+                .botons{
+                    display: flex;
+                    a{
+                        background-color: $bg-primary;
+                        height: 50px;
+                        width: 20%;
+                        margin: 3%;
+                        text-decoration: none;
+                        color: black;
+                        border: black 1px dotted;
+                        border-radius: 5px;
+                        p{
+                            text-align: center;
+                            padding-top: 15px;
+                        }
+                        
+                    }
+                }
+            }
+            .izquierda{
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .conteiner-lower{
+        display: flex;
+        justify-content: space-around;
+        .cards-lower{
+            width: 20%;
+            background-color: $bg-secondary;
+            div{
+                width: 20px;
+                height: 20px;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: -4px -1px 0px 1px #92f7f2;
+            }
+            h3{
+                span{
+                    background-image:  linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+                }
+                
+            }
+        }
+    }
+}

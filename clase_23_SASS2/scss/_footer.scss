@@ -1,0 +1,28 @@
+/*******footer*********/
+footer{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        padding-left: 1%;
+    }
+    div{
+        padding-right: 2%;
+        display: flex;
+        a{
+            width: 30px;
+            height: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: -4px -1px 0px 1px #92f7f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+        }
+    }
+}

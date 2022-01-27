@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/******header*****/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  padding-left: 10px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+
+header ul li {
+  margin: 0% 12px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/******main******/
+main {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 3%;
+}
+
+main .conteiner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96%;
+}
+
+main .conteiner-top .cabeza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .conteiner-top .cabeza .cards-top {
+  width: 50%;
+  height: 400px;
+  position: relative;
+}
+
+main .conteiner-top .cabeza .cards-top h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+}
+
+main .conteiner-top .cabeza .cards-top h2 span {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, white), color-stop(50%, #92f7f2), to(#92f7f2));
+  background-image: linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+}
+
+main .conteiner-top .cabeza .cards-top .botons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .conteiner-top .cabeza .cards-top .botons a {
+  background-color: #03faee;
+  height: 50px;
+  width: 20%;
+  margin: 3%;
+  text-decoration: none;
+  color: black;
+  border: black 1px dotted;
+  border-radius: 5px;
+}
+
+main .conteiner-top .cabeza .cards-top .botons a p {
+  text-align: center;
+  padding-top: 15px;
+}
+
+main .conteiner-top .cabeza .izquierda img {
+  height: 100%;
+  width: 100%;
+}
+
+main .conteiner-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .conteiner-lower .cards-lower {
+  width: 20%;
+  background-color: #f8f8f8;
+}
+
+main .conteiner-lower .cards-lower div {
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: -4px -1px 0px 1px #92f7f2;
+          box-shadow: -4px -1px 0px 1px #92f7f2;
+}
+
+main .conteiner-lower .cards-lower h3 span {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, white), color-stop(50%, #92f7f2), to(#92f7f2));
+  background-image: linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+}
+
+/*******footer*********/
+footer {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  padding-left: 1%;
+}
+
+footer div {
+  padding-right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div a {
+  width: 30px;
+  height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: -4px -1px 0px 1px #92f7f2;
+          box-shadow: -4px -1px 0px 1px #92f7f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
