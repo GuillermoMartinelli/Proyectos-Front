@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*******header*********/
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px 0px 10px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 550px) {
+  header {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+header input {
+  border-radius: 5px;
+  height: 40px;
+  border-color: #FAFAFA;
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  header input {
+    display: block;
+  }
+}
+
+header img {
+  justify-self: flex-end;
+  border-radius: 50%;
+}
+
+/******main*****/
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 18% 1fr;
+      grid-template-rows: 18% 1fr;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 10%;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+}
+
+main .principal {
+  width: 100%;
+  padding-left: 20px;
+}
+
+main .principal section {
+  border: 0.4px solid rgba(34, 34, 34, 0.5);
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 5%;
+}
+
+main .principal .historias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .principal .historias a:nth-child(5), main .principal .historias a:nth-child(6), main .principal .historias a:nth-child(7) {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  main .principal .historias a:nth-child(5):nth-child(5), main .principal .historias a:nth-child(6):nth-child(5), main .principal .historias a:nth-child(7):nth-child(5) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  main .principal .historias a:nth-child(5):nth-child(6), main .principal .historias a:nth-child(6):nth-child(6), main .principal .historias a:nth-child(7):nth-child(6) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  main .principal .historias a:nth-child(5):nth-child(7), main .principal .historias a:nth-child(6):nth-child(7), main .principal .historias a:nth-child(7):nth-child(7) {
+    display: block;
+  }
+}
+
+main .principal .historias a img {
+  border-radius: 50%;
+}
+
+main .principal .posteos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  justify-items: center;
+}
+
+main .principal .posteos .perfil {
+  padding: 0.5% 2% 0.5% 2%;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main .principal .posteos .perfil .info-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .principal .posteos .perfil .info-perfil img {
+  border-radius: 50%;
+}
+
+main .principal .posteos .img-posteo {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+
+main .principal .posteos .img-posteo img {
+  width: 100%;
+}
+
+main .principal .posteos .sociales {
+  width: 90%;
+}
+
+main .principal .posteos .sociales .iconos-sociales {
+  font-size: 25px;
+}
+
+main .principal .posteos .sociales .iconos-sociales i {
+  padding-right: 15px;
+}
+
+main .principal .posteos .comentarios {
+  width: 90%;
+}
+
+main .principal .posteos .comentarios p:nth-child(1) {
+  color: #a49b9b;
+  margin-bottom: 12px;
+}
+
+main .secundaria {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  main .secundaria {
+    display: block;
+    width: 100%;
+  }
+  main .secundaria .cuenta {
+    margin: 0 0 13% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .secundaria .cuenta .cuenta-propia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+  }
+  main .secundaria .cuenta .cuenta-propia P:nth-child(2) {
+    color: #808080;
+  }
+  main .secundaria .cuenta .cuenta-propia img {
+    border-radius: 50%;
+  }
+  main .secundaria .cuenta > p {
+    color: #1ca0f6;
+  }
+  main .secundaria .sugerencias > p {
+    color: #808080;
+    font-size: 10px;
+  }
+  main .secundaria .sugerencias div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 8px;
+  }
+  main .secundaria .sugerencias div div img {
+    border-radius: 50%;
+    height: 40px;
+  }
+  main .secundaria .sugerencias div .seguir {
+    color: #1ca0f6;
+  }
+}
+
+/******footer******/
+footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 2% 0 2% 0;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

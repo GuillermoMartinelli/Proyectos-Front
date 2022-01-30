@@ -1,0 +1,146 @@
+/******main*****/
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 1fr;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    @media screen and (min-width: 700px) {
+        grid-template-columns: 70% 30%;
+    }
+    .principal {
+        width: 100%;
+        padding-left: 20px;
+        section {
+            border: 0.4px solid rgba(34, 34, 34, 0.5);
+            border-radius: 5px;
+            width:95%;
+            margin-bottom: 5%;
+        }
+        .historias {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                &:nth-child(5),
+                &:nth-child(6),
+                &:nth-child(7) {
+                    display: none;
+                    @media screen and (min-width: 480px) {
+                        &:nth-child(5) {
+                            display: block;
+                        }
+                    }
+                    @media screen and (min-width: 580px) {
+                        &:nth-child(6) {
+                            display: block;
+                        }
+                    }
+                    @media screen and (min-width: 680px) {
+                        &:nth-child(7) {
+                            display: block;
+                        }
+                    }
+                }
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+        .posteos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            justify-items: center;
+            .perfil {
+                padding: 0.5% 2% 0.5% 2%;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .info-perfil {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .img-posteo {
+                width: 90%;
+                display: flex;
+                padding: 20px 0 20px 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .sociales {
+                width: 90%;
+                .iconos-sociales {
+                    font-size: 25px;
+                    i {
+                        padding-right: 15px;
+                    }
+                }
+            }
+            .comentarios {
+                width: 90%;
+                p:nth-child(1) {
+                    color: #a49b9b;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+    .secundaria {
+        display: none;
+        @media screen and (min-width: 700px) {
+            display: block;
+            width: 100%;
+            .cuenta {
+                margin: 0 0 13% 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .cuenta-propia {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    P:nth-child(2) {
+                        color: #808080;
+                    }
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+                >p {
+                    color: #1ca0f6;
+                }
+            }
+            .sugerencias {
+                >p {
+                    color: #808080;
+                    font-size: 10px;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 8px;
+                    div {
+                        img {
+                            border-radius: 50%;
+                            height: 40px;
+                        }
+                    }
+                    .seguir{
+                        color: #1ca0f6;;
+                    }
+                }
+            }
+        }
+    }
+}
