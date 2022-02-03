@@ -124,6 +124,7 @@ main{
                 border-style: none;
                 margin-top: 5px;
                 font-size: 9px;
+                padding: 20px;
                 @media screen and (min-width:600px){
                     width: 400px;
                 }
@@ -131,12 +132,14 @@ main{
                     background-color: $tercer-color;
                     width: 158px;
                     font-size: 17px;
+                    padding: 0;
                 }
                 &[type="submit"]{
                     width: 158px;
                     background-color:$primer-color;
                     font-size: 17px;
                     margin: 10% 0;
+                    padding: 0;
                 }
             }
         }
@@ -167,6 +170,7 @@ main{
                 border-radius: 15px;
                 height: 40px;
                 border-style: none;
+                padding: 20px;
                 &[type="email"]{
                     width: 200px;
                 }
@@ -176,6 +180,7 @@ main{
                     color: $cuarto-color;
                     font-size: 15px;
                     font-weight: 700;
+                    padding: 0;
                 }
             }
         }

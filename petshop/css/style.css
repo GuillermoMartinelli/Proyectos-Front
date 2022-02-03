@@ -347,6 +347,7 @@ main .contactanos form input {
   border-style: none;
   margin-top: 5px;
   font-size: 9px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -359,6 +360,7 @@ main .contactanos form input[type="reset"] {
   background-color: #8A8787;
   width: 158px;
   font-size: 17px;
+  padding: 0;
 }
 
 main .contactanos form input[type="submit"] {
@@ -366,6 +368,7 @@ main .contactanos form input[type="submit"] {
   background-color: #F0A83E;
   font-size: 17px;
   margin: 10% 0;
+  padding: 0;
 }
 
 main .registro {
@@ -424,6 +427,7 @@ main .registro .registro-low input {
   border-radius: 15px;
   height: 40px;
   border-style: none;
+  padding: 20px;
 }
 
 main .registro .registro-low input[type="email"] {
@@ -436,6 +440,7 @@ main .registro .registro-low input[type="submit"] {
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 700;
+  padding: 0;
 }
 
 /******footer*****/
@@ -606,6 +611,14 @@ footer .parent .div7 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer .parent {
+    -ms-grid-columns: 10% 15% (1fr)[3];
+        grid-template-columns: 10% 15% repeat(3, 1fr);
+    grid-column-gap: 0px;
   }
 }
 
