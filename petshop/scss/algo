@@ -1,0 +1,54 @@
+    .header-low{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primer-bg;
+        padding: 2% 3% ;
+        h1{
+            font-size: 20px;
+            :nth-child(3){
+                color:$cuarto-color;
+            }
+        }
+        input[type="checkbox"]:checked~nav{
+            display: block;
+        }
+        nav{
+            display: none;
+            color: $cuarto-color;
+            
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin-right: 20px;
+                }
+                :nth-child(5){
+                    display: none;
+                }
+                @media screen and (max-width:600px){
+                flex-direction: column;
+                position: fixed;
+                top: 50px;
+                right: 10px;
+                background-color: $primer-bg;
+                :nth-child(5){
+                    display: block;
+                }
+                }
+            }
+            @media screen and (min-width:600px){
+                display: inline;
+            }
+
+        }
+        .fa-bars{
+            color:$cuarto-color;
+            @media screen and (min-width:600px){
+                display: none;
+            }
+        }
+        .bar{
+            display: none;
+        }
+    }

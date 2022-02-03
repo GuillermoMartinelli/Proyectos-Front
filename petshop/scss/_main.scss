@@ -1,0 +1,183 @@
+/******main*****/
+main{
+    display: flex;
+    flex-direction: column;
+    .hero{
+        display: flex;
+        background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end;
+        align-items: center;
+        @media screen and (min-width:600px){
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                color: $segundo-color;
+                background-color: $cuarto-color;
+                width: 300px;
+                text-align: center;
+                font-size: 25px;
+                @media screen and (min-width:600px) {
+                    font-size: 30px;
+                    width: 400px;
+                }
+            }
+            p{
+                @media screen and (max-width:600px){
+                    font-weight: 700;
+                    
+                }
+            }
+            a{
+                width: 140px;
+                height: 40px;
+                background-color:$primer-bg;
+                border-radius: 5px;
+                color: $cuarto-color;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    color: $quinto-color;
+                }
+            }
+        }
+    }
+    .productos-destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 83px;
+            width: 90px;
+        }
+        h2{
+            font-size: 40px;
+            text-align: center;
+            color: $segundo-color;
+        }
+        ul{
+            display: flex;
+            :nth-child(2)::before,:nth-child(3)::before{
+                content: "-";
+                margin-right: 10px;
+            }
+            li{
+                text-decoration: none;
+                list-style: none;
+                padding-left: 10px;
+                a{
+                    text-decoration: none;
+                    color: $quinto-color;
+                }
+            }
+        }
+        .conteiner{
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width:600px) {
+                flex-direction: row;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    height: 240px;
+                    width: 245px;
+                
+                }
+                .description{
+                    color: $segundo-color;
+                }
+                .price{
+                    color: $primer-color;
+                }
+            }
+        }
+    }
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            color: $segundo-color;;
+            font-size: 40px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input{
+                background-color: $segundo-bg;
+                color: $cuarto-color;
+                border-radius: 15px;
+                height: 40px;
+                width: 300px;
+                border-style: none;
+                margin-top: 5px;
+                font-size: 9px;
+                @media screen and (min-width:600px){
+                    width: 400px;
+                }
+                &[type="reset"]{
+                    background-color: $tercer-color;
+                    width: 158px;
+                    font-size: 17px;
+                }
+                &[type="submit"]{
+                    width: 158px;
+                    background-color:$primer-color;
+                    font-size: 17px;
+                    margin: 10% 0;
+                }
+            }
+        }
+    }
+    .registro{
+        background-color: $primer-bg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width:600px){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2% 2% 2% 2%; 
+            }
+        .registro-top{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 15px;
+            }
+        }
+        .registro-low{
+            display: flex;
+            justify-content: center;
+
+            input{
+                border-radius: 15px;
+                height: 40px;
+                border-style: none;
+                &[type="email"]{
+                    width: 200px;
+                }
+                &[type="submit"]{
+                    width: 100px;
+                    background-color: $segundo-bg;
+                    color: $cuarto-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
